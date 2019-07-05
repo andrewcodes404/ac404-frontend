@@ -1,0 +1,52 @@
+// import React from 'react'
+
+// import Meta from './lib/Meta'
+// import Navigation from './lib/Navigation'
+
+// import PropTypes from 'prop-types'
+
+// import User from './User'
+// class PageWrapper extends React.Component {
+//     state = {
+//         loggedIn: false,
+//     }
+
+//     render() {
+//         return (
+//             <div>
+//                 <User>
+//                     {({ data: { user } }) => {
+//                         console.log('user = ', user)
+
+//                         if (user) {
+//                             // this.setState({ loggedIn: me })
+//                             console.log('yes logged in')
+//                         }
+//                         return (
+//                             <div>
+//                                 <Meta />
+//                                 <Navigation loggedIn={user} />
+//                                 {/* <div className="page-wrapper">{this.props.children}</div> */}
+//                                 <div className="page-wrapper">
+//                                     {React.Children.map(
+//                                         this.props.children,
+//                                         child =>
+//                                             React.cloneElement(child, {
+//                                                 loggedIn: user,
+//                                             })
+//                                     )}
+//                                 </div>
+//                             </div>
+//                         )
+//                     }}
+//                 </User>
+//             </div>
+//         )
+//     }
+// }
+
+// PageWrapper.propTypes = {
+//     children: PropTypes.node.isRequired,
+// }
+
+// export default PageWrapper
